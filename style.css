@@ -1,0 +1,30 @@
+.icon {
+  margin-top: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.logo {
+  margin-top: 20px;
+  height: 100px;
+  width: 100px; }
+
+.nav {
+  margin-top: 50px; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #F1F1ED; }
+  body ul {
+    list-style: none; }
+    body ul li {
+      font-size: .75em;
+      font-weight: bold; }
+  body a {
+    color: black;
+    text-decoration: none; }
+    body a:hover {
+      background: none; }
+
+/*# sourceMappingURL=style.css.map */

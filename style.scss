@@ -1,0 +1,66 @@
+@mixin centerer($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+
+
+.icon {
+	
+	margin-top: 200px;
+	@include centerer(horizontal);
+	
+
+}
+
+.logo {
+
+margin-top:20px;
+height: 100px;
+width: 100px
+
+}
+
+.nav {
+
+	margin-top: 50px;
+
+	}
+
+body {
+
+
+
+	font-family: 'Open Sans', sans-serif;
+    background: #F1F1ED;
+
+	ul {
+	
+		list-style: none;
+
+		li {
+			font-size: .75em;
+			font-weight: bold;
+
+			}
+	}
+
+	a {
+		color: black;
+		text-decoration: none;
+		&:hover { background: none;
+		}
+
+	}	
+
+}
